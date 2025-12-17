@@ -1,5 +1,5 @@
 /*-------------------------------------------
-	共通部分
+	共通部文
   -------------------------------------------*/
 * {
   margin: 0;
@@ -41,28 +41,113 @@ a {
 /*-------------------------------------------
   ヘッダー
   -------------------------------------------*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%; 
+}
 
+.header-logo {
+  height: 24px;
+}
+
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.header li:hover{
+ opacity: 0.7;
+}
 
 /*-------------------------------------------
   メインビジュアル
   -------------------------------------------*/
+.main-visual {
+  width: 100%;
+  height: 640px;
+  border-radius: 16px;
+  object-fit: cover;
+}
 
 
 /*-------------------------------------------
   セクション 共通部分
   -------------------------------------------*/
+.common {
+ display: flex;
+ flex-direction: column;
+ gap: 60px;
+ align-items: center;
+}
 
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+} 
+
+.section-title {
+  text-decoration: underline;
+}
 
 /* -------------------------------------------
   プロフィール
   -------------------------------------------*/
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
 
+.profile-image {
+  width: 200px;
+  height; 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
 
 /* -------------------------------------------
   記事
   -------------------------------------------*/
+.Article_layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 16px;
+}
 
+.Article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*-------------------------------------------
   フッター
-  -------------------------------------------*/
+ -------------------------------------------*/
+footer  {
+  font-size: small;
+  text-align:  center;
+  padding: 40px 0;
+}
+
+
+
